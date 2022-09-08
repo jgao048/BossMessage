@@ -1,0 +1,39 @@
+boss-names:
+  - "&aSkeletal Knight"
+boss-spawners:
+  - "Knight"
+spawn-sound: "entity_ender_dragon_growl"
+spawn-message:
+  - "&8&l&m------<--------------->------"
+  - ""
+  - "&8<&a!&8> &7The %name% has spawned in %world%"
+  - "at (x: %x%, y: %y%, z: %z%) defeat it to earn rewards!"
+  - ""
+  - "&8&l&m------<--------------->------"
+death-message:
+  - "&8&l&m------<&r %name%&7 has died! &8&l&m>------"
+  - ""
+  - "%ranking%"
+  - ""
+  - "&8&l&m---&c&l<>&8&l&m---&8&l&m---&c&l<>&8&l&m---"
+ranking-format: "#%placement% - %name% - %damage%"
+rewards:
+  "&aSkeletal Knight":
+    '1':
+      placement:
+        - 1
+      chance: 100
+      messages:
+        - "You placed first and earned this reward!"
+      commands:
+        - "broadcast %player% first place first reward"
+    '2':
+      placement:
+        - 1
+        - 2
+      chance: 50
+      messages:
+        - "You placed first and got 50% of winning this!"
+      commands:
+        - "broadcast %player% first place second reward"
+

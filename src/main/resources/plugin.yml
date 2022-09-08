@@ -1,0 +1,5 @@
+name: BossMessage
+version: ${project.version}
+main: dev.failures.main.BossMessage
+api-version: 1.16
+depend: [MythicMobs,PlaceholderAPI]
